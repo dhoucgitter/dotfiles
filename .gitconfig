@@ -1,0 +1,8 @@
+[user]
+	name = David Houck
+	email = David.Houck@sas.com
+[core]
+	eol = lf
+	autocrlf = input
+[merge]
+	renormalize = true
