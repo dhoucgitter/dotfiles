@@ -6,3 +6,11 @@
 	autocrlf = input
 [merge]
 	renormalize = true
+[push]
+	default = upstream
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	last = log -1
