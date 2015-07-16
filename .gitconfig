@@ -12,7 +12,9 @@
 	co = checkout
 	ci = commit
 	st = status
+	b = branch -vv
 	br = branch
 	last = log -1
+	rmt = remote -v
 [log]
 	decorate = true
