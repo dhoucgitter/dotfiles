@@ -9,12 +9,22 @@
 [push]
 	default = upstream
 [alias]
-	co = checkout
-	ci = commit
-	st = status
+	a = add
+	ap = add --patch
 	b = branch -vv
+	ba = branch -vv --all
+	ci = commit
+	amend = commit --amend
+	co = checkout
+	cp = cherry-pick --no-commit
+	d = difftool --no-prompt
+	r = remote
+	m = merge --squash
+	rmt = remote -v
+	suno = status -suno
+	s-b = status -s -b
+	st = status
 	br = branch
 	last = log -1
-	rmt = remote -v
 [log]
 	decorate = true
