@@ -9,20 +9,21 @@
 [push]
 	default = upstream
 [alias]
+	pull = pull --rebase		; default (--merge) causes tangled history
 	a = add
 	ap = add --patch
-	b = branch -vv
-	ba = branch -vv --all
+	b = branch -vv			; very verbose branch listing
+	ba = branch -vv --all		; ... with remote branches included
 	ci = commit
 	amend = commit --amend
 	co = checkout
 	cp = cherry-pick --no-commit
 	d = difftool --no-prompt
-	r = remote
-	m = merge --squash
+	r = remote			; remote operations
+	m = merge --squash		; merge all commits into current working tree;
 	rmt = remote -v
 	suno = status -suno
-	s-b = status -s -b
+	s-b = status -s -b		; terse status
 	st = status
 	br = branch
 	last = log -1
