@@ -15,16 +15,20 @@
 	b = branch -vv			; very verbose branch listing
 	ba = branch -vv --all		; ... with remote branches included
 	ci = commit
+	cid = commit --dry-run
+	cli = clean -i
 	amend = commit --amend
 	co = checkout
 	cp = cherry-pick --no-commit
 	d = difftool --no-prompt
+	dc = diff --check
+	ls = ls-files
 	r = remote			; remote operations
 	m = merge --squash		; merge all commits into current working tree;
 	rmt = remote -v
 	suno = status -suno
 	s-b = status -s -b		; terse status
-	st = status
+	st = status -suno
 	br = branch
 	last = log -1
 [log]
