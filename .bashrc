@@ -116,3 +116,5 @@ fi
 
 [ -r /home/david/.byobu/prompt ] && . /home/david/.byobu/prompt   #byobu-prompt#
 
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
