@@ -13,5 +13,6 @@ alias clean="rm -I outload*.*"
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
-alias 2=./2.sh
-alias ll='ls -l -F'
+alias ll='ls -latr'
+alias cm='cmatrix -b -u 9 -s'
+alias 2='/home/david/2.sh $1'

@@ -19,6 +19,9 @@ shopt -s histappend
 HISTSIZE=10000
 HISTFILESIZE=10000
 
+# After each command, append to the history file and reread it
+export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
+
 CDPATH=/home/david/github/myrepos
 
 # check the window size after each command and, if necessary,
