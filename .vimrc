@@ -1,1 +1,2 @@
 set modeline
+colorscheme elflord
