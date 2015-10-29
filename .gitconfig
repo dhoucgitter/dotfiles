@@ -37,3 +37,4 @@
 	user = dhoucgitter
 [color]
 	ui = true
+	ui = auto
