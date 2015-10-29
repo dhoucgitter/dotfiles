@@ -35,3 +35,5 @@
 	decorate = true
 [github]
 	user = dhoucgitter
+[color]
+	ui = true
