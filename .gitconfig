@@ -28,7 +28,7 @@
 	rmt = remote -v
 	suno = status -suno
 	s-b = status -s -b		; terse status
-	st = status -suno
+	st = status -uno
 	br = branch
 	last = log -1
 [log]
