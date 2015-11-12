@@ -122,3 +122,4 @@ fi
 source ~/.git-completion.bash
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="$PATH:/home/david/terraform" # Add terraform to PATH
