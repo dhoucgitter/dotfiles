@@ -102,8 +102,15 @@ alias l='ls -CF'
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
+if [ -f ~/.bash_aliases.sh ]; then
+    . ~/.bash_aliases.sh
+fi
+
+# You may want to put all your additions into a separate file like
+# ~/.bash_functions, instead of adding them here directly.
+
+if [ -f ~/.bash_functions ]; then
+    . ~/.bash_functions
 fi
 
 # enable programmable completion features (you don't need to enable
@@ -123,3 +130,4 @@ source ~/.git-completion.bash
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="$PATH:/home/david/terraform/" # Add terraform to PATH
+export PATH="$PATH:/home/david/packer/" # Add packer to PATH
