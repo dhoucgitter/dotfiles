@@ -4,6 +4,7 @@
 [core]
 	eol = lf
 	autocrlf = input
+	abbrev = 7
 [merge]
 	renormalize = true
 [push]
@@ -30,7 +31,7 @@
 	s-b = status -s -b		; terse status
 	st = status -uno
 	br = branch
-	last = log -1
+	last = log -1 --abbrev-commit
 [log]
 	decorate = true
 [github]
