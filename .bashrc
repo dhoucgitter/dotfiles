@@ -17,7 +17,7 @@ shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=10000
-HISTFILESIZE=10000
+HISTFILESIZE=200000
 
 # After each command, append to the history file and reread it
 export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"

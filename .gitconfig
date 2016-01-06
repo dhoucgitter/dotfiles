@@ -31,7 +31,7 @@
 	s-b = status -s -b		; terse status
 	st = status -uno
 	br = branch
-	last = log -1 --abbrev-commit
+	last = log -1 --abbrev-commit --stat
 [log]
 	decorate = true
 [github]
