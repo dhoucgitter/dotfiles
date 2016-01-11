@@ -1,0 +1,10 @@
+# Ignore everything
+*
+
+# But not these files
+!*.vimrc
+!*.vim
+!*.bashrc
+!*.bash_functions
+!*.bash_aliases
+!.gitignore
