@@ -127,6 +127,9 @@ fi
 [ -r /home/david/.byobu/prompt ] && . /home/david/.byobu/prompt   #byobu-prompt#
 
 source ~/.git-completion.bash
+source ~/.git-prompt.sh
+GIT_PS1_SHOWDIRTYSTATE=yes
+GIT_PS1_SHOWUNTRACKEDFILES=yes
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="$PATH:/home/david/terraform/" # Add terraform to PATH
