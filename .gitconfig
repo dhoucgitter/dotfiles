@@ -10,7 +10,6 @@
 [push]
 	default = upstream
 [alias]
-	pull = pull --rebase		; default (--merge) causes tangled history
 	a = add
 	ap = add --patch
 	b = branch -vv			; very verbose branch listing
@@ -32,6 +31,10 @@
 	st = status -uno
 	br = branch
 	last = log -1 --abbrev-commit --stat
+	logo = log --abbrev-commit --oneline
+	brm = branch --merged
+	stu = status -u
+	rls = review --list
 [log]
 	decorate = true
 [github]
