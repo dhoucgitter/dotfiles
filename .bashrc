@@ -134,3 +134,11 @@ GIT_PS1_SHOWUNTRACKEDFILES=yes
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="$PATH:/home/david/terraform/" # Add terraform to PATH
 export PATH="$PATH:/home/david/packer/" # Add packer to PATH
+
+export WORKON_HOME=$HOME/virtualenvs
+export PROJECT_HOME=$HOME/venvDevel
+export VIRTUALENVWRAPPER_SCRIPT=/usr/local/bin/virtualenvwrapper.sh
+source /usr/local/bin/virtualenvwrapper_lazy.sh
+
+export GOPATH=$HOME/work
+export GO15VENDOREXPERIMENT=1

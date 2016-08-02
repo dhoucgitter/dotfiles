@@ -35,6 +35,11 @@
 	brm = branch --merged
 	stu = status -u
 	rls = review --list
+	unstage = reset HEAD --
+	unstageall = reset HEAD
+	diffc = diff --cached
+	hide = update-index --assume-unchanged
+	unhide = update-index --no-assume-unchanged
 [log]
 	decorate = true
 [github]
