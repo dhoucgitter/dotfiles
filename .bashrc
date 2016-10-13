@@ -14,9 +14,10 @@ HISTCONTROL=ignoreboth:erasedups
 
 # append to the history file, don't overwrite it
 shopt -s histappend
+shopt -s histverify
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=10000
+HISTSIZE=100000
 HISTFILESIZE=200000
 
 # After each command, append to the history file and reread it
@@ -138,7 +139,10 @@ export PATH="$PATH:/home/david/packer/" # Add packer to PATH
 export WORKON_HOME=$HOME/virtualenvs
 export PROJECT_HOME=$HOME/venvDevel
 export VIRTUALENVWRAPPER_SCRIPT=/usr/local/bin/virtualenvwrapper.sh
-source /usr/local/bin/virtualenvwrapper_lazy.sh
 
-export GOPATH=$HOME/work
-export GO15VENDOREXPERIMENT=1
+export PATH=$PATH:/usr/local/go/bin
+export TERM=xterm-256color
+export EDITOR=$(command -v nvim)
+
+source /usr/local/bin/virtualenvwrapper_lazy.sh
+eval "$(direnv hook bash)"
