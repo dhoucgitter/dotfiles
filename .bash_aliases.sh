@@ -17,3 +17,5 @@ alias ll='ls -latr'
 alias cm='cmatrix -b -u 9 -s'
 alias 2='/home/david/2.sh $1'
 alias shpath='env |grep PATH'
+
+alias rgs="ranger-cd --choosedir=/home/david/ranger_target_file"

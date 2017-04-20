@@ -145,4 +145,6 @@ export TERM=xterm-256color
 export EDITOR=$(command -v nvim)
 
 source /usr/local/bin/virtualenvwrapper_lazy.sh
+# Add ranger auto change folder function
+source ~/bash_automatic_cd.sh
 eval "$(direnv hook bash)"
