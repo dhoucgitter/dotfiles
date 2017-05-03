@@ -19,3 +19,9 @@ alias 2='/home/david/2.sh $1'
 alias shpath='env |grep PATH'
 
 alias rgs="ranger-cd --choosedir=/home/david/ranger_target_file"
+
+alias dps='sudo docker ps'
+alias dpsa='sudo docker ps -a'
+alias images='sudo docker images'
+
+alias pyg=pygmentize

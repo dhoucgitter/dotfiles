@@ -8,3 +8,12 @@ mcd () {
 tre() {
     tree -L ${1:-2} ;
 }
+
+rg() {
+    if [ -z "$RANGER_LEVEL" ]
+    then
+        ranger
+    else
+        exit
+    fi
+}

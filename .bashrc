@@ -1,3 +1,4 @@
+#!/bin/bash
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -23,7 +24,8 @@ HISTFILESIZE=200000
 # After each command, append to the history file and reread it
 export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
 
-CDPATH=/home/david/github/myrepos
+# Add desired values to CDPATH on the next line
+#CDPATH=/home/david/github/myrepos
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -49,7 +51,7 @@ esac
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
 # should be on the output of commands, not on the prompt
-#force_color_prompt=yes
+force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
@@ -127,6 +129,7 @@ fi
 
 [ -r /home/david/.byobu/prompt ] && . /home/david/.byobu/prompt   #byobu-prompt#
 
+# git PS1 prompt setup
 source ~/.git-completion.bash
 source ~/.git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=yes
@@ -144,7 +147,19 @@ export PATH=$PATH:/usr/local/go/bin
 export TERM=xterm-256color
 export EDITOR=$(command -v nvim)
 
+# setup for virtualenv command use
 source /usr/local/bin/virtualenvwrapper_lazy.sh
+
 # Add ranger auto change folder function
 source ~/bash_automatic_cd.sh
+
+# direnv folder-based environment variable controller
 eval "$(direnv hook bash)"
+
+# Add powerline decoration to prompt
+if [ -f ~/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh ]; then
+    source ~/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
+fi
+
+# Added for ranger to start a shell in last browsed path
+cd "$AUTOCD"
