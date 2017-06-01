@@ -25,3 +25,5 @@ alias dpsa='sudo docker ps -a'
 alias images='sudo docker images'
 
 alias pyg=pygmentize
+
+alias ls-ssh-agent-key-names='ssh-add -L |cut -f3 -d " "'

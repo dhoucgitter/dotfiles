@@ -17,3 +17,15 @@ rg() {
         exit
     fi
 }
+
+ctrl-swap-caps() {
+    setxkbmap -option ctrl:swapcaps
+}
+
+reset-ctrl-swap-caps() {
+    setxkbmap -option
+}
+
+print-xkbmap() {
+    setxkbmap -print
+}

@@ -151,7 +151,7 @@ export EDITOR=$(command -v nvim)
 source /usr/local/bin/virtualenvwrapper_lazy.sh
 
 # Add ranger auto change folder function
-source ~/bash_automatic_cd.sh
+source ~/ranger_bash_automatic_cd.sh
 
 # direnv folder-based environment variable controller
 eval "$(direnv hook bash)"
@@ -159,6 +159,16 @@ eval "$(direnv hook bash)"
 # Add powerline decoration to prompt
 if [ -f ~/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh ]; then
     source ~/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
+fi
+
+# Add private keys without passphrases
+if [ -f ~/add-private-ssh-keys.sh ]; then
+    source ~/add-private-ssh-keys.sh
+fi
+
+# Swap Ctrl-CapsLock
+if [ -f ~/ctrl-swap-caps.sh ]; then
+    source ~/ctrl-swap-caps.sh
 fi
 
 # Added for ranger to start a shell in last browsed path
