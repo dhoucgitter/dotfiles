@@ -145,7 +145,8 @@ export VIRTUALENVWRAPPER_SCRIPT=/usr/local/bin/virtualenvwrapper.sh
 
 export PATH=$PATH:/usr/local/go/bin
 export TERM=xterm-256color
-export EDITOR=$(command -v nvim)
+export EDITOR
+EDITOR=$(command -v nvim)
 
 # setup for virtualenv command use
 source /usr/local/bin/virtualenvwrapper_lazy.sh
@@ -163,7 +164,7 @@ fi
 
 # Add private keys without passphrases
 if [ -f ~/add-private-ssh-keys.sh ]; then
-    source ~/add-private-ssh-keys.sh
+    source ~/add-private-ssh-keys.sh > /dev/null 2>&1
 fi
 
 # Swap Ctrl-CapsLock
